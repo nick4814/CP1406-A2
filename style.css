@@ -215,7 +215,6 @@
 	.header_buttons li {
 		display: inline-block;
 		margin: 0.3em;
-		word-break: break-all;
 	}
 	.header_buttons a {
 		color: #000;
