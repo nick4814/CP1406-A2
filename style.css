@@ -1,0 +1,464 @@
+/*------------------------------------*/
+/*----------->>> CONTENTS <<<---------*/
+/*--------------------------------------
+	1.  RESET 
+	2.	GLOBAL 
+	3.	HEADER/NAVIGATION
+	4.	PAGE STRUCTURE
+		1.	ARTIST
+	5.	RESPONSIVE (using @media queries)
+		1.	LARGER SCREENS (queries: >2300px, >1050px (Show navigation))
+		2.	SHOW NAV MENU (query: <1050px)
+		3.	TABLET -> BIG PHONES (query: <780px)
+		4.	SMALL -> BIG PHONES (query: <600px)
+		5.	CUSTOM MENU SCROLL (query: height <450px, height <340px)
+--------------------------------------*/
+
+/*----------->>> RESET <<<-----------*/
+/*------------------------------------*/
+/*Resets styles so there aren't as many incompatiblities with browsers (so the page always looks like it should)*/
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font: inherit; font-size:100%; vertical-align:baseline; background:transparent;} article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;} body{line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;} blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;} :focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;} table{border-collapse:collapse; border-spacing:0;}
+/*end reset*/
+
+/*----------->>> GLOBAL <<<-----------*/
+/*------------------------------------*/
+	body {
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out; 
+		transition: all 0.3s ease-in-out;
+	}
+	html {
+		background: #f1f1f1;
+		background-image: url('images/barrierReef.jpg');
+	}
+	body {
+		font: 17px/26px Calibri, 'Trebuchet MS', 'Open Sans', Helvetica, Arial, 'Lucida Grande', sans-serif;
+		color: #6a6a6a;
+		font-size: medium;
+		-webkit-font-smoothing: antialiased;
+		-webkit-backface-visibility: hidden;
+		position: relative;
+		right: 0;
+	}
+	input[type=text] {
+		position: absolute;
+		width: 8em;
+		height: 3em;
+		top: 0.25em;
+		right: 0em;
+		margin-right: 5%;
+		box-sizing: border-box;
+		border: 0.13em solid #ccc;
+		border-radius: 0.3em;
+		font-size: 1em;
+		background-color: white;
+		background-image: url('images/searchIcon.png');
+		background-position: 0.7em 0.7em; 
+		background-repeat: no-repeat;
+		padding: 0.8em 1.25em 0.8em 2.5em;
+		-webkit-transition: width 0.4s ease-in-out;
+		transition: width 0.4s ease-in-out;
+	}
+	input[type=text]:focus {
+		width: 50%;
+	}
+	.left_top_part {
+		width: 30%;
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+	.left_top_part img {
+		width: 70%;
+	}
+	a {
+		color: #26a6d1;
+		cursor: pointer;
+		cursor: hand;
+		-moz-transition: color 0.15s linear;
+		-o-transition: color 0.15s linear;
+		-webkit-transition: color 0.15s linear;
+		transition: color 0.15s linear;
+		text-decoration: none;
+	}
+	/* Remove highlight on touch mobile */
+	img, a, #menu_icon {-webkit-tap-highlight-color: rgba(255, 255, 255, 0);}
+	p {font-size: 1.1em;}
+	b {font-weight:bold;}
+	i {font-style: italic;}
+	h1, h2, h3, h4, h5, h6 {color: #324d5b;}
+	h1, h2{
+		font-size: 2em;
+		line-height: 2.5em;
+	}
+	.artist_title {
+		font-size: 2em;
+		line-height: 1.2em;
+		text-align: left;
+	}
+	.right_bot_part {
+		height: auto;
+		display: table-cell;
+		vertical-align: middle;
+		line-height: 1.5em;	
+		padding-left: 1em;
+	}
+	.right_bot_part.wrap {
+		display: block;
+		margin: 0 auto;
+	}
+	.right_bot_part p {
+		padding: 1em 1em 0 1em;
+		font-size: 1.2em;
+		width: 90%;
+	}	
+	.about_artist .wrap {
+		position: relative;
+		display: table;
+		padding: 2em;
+		text-align: left;
+		max-width: 75%;
+		margin: 0 auto;
+		height: auto;
+	}
+/*end global*/
+
+
+/*------>>> HEADER/NAVIGATION <<<-----*/
+/*------------------------------------*/
+	#header0 {height: 3.5em;}
+	#header1 {
+		height: 3.2em;
+		padding: 0.7em 0;
+		background-color: #80ccff;
+	}
+	#header1 .wrap {
+		position: relative;
+		width: 100%;
+		top: 0.1em;
+	}
+	#menu_title {display: none;}
+	.navbar {
+		position: absolute;
+		background-color: #00CC00;
+		width: 100%;
+		text-align: center;
+		height: 3.8em;
+		right: 0px;
+		top: 0px;
+		padding-right: 5%;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+	.navbar ul {
+		float: right;
+		list-style: none;
+		white-space: nowrap;
+	}
+	.navbar li {
+		padding: 0.8em 0;
+		border-bottom: none;
+		display: inline-block;
+	}
+	.navbar a {
+		-moz-border-radius: 0.2em;
+		-webkit-border-radius: 0.2em;
+		border-radius: 0.2em;
+		color: #FFFFFF;
+		display: block;
+		font-size: 1.2em;
+		padding: 0.2em 1.1em 0.2em 1.1em;
+		text-decoration: none;
+	}
+	#logo img {
+		height:100%;
+		border-radius: 0.3em;
+	}
+	.logo {
+		position: absolute;
+		text-align: left;
+		left: 0px;
+		top: 0.25em;
+		width: 12.5em;
+		height: 3em;
+		margin-left: 5%;
+	}
+	#bar1, #bar2, #bar3 {
+		width: 2.2em;
+		height: 0.3em;
+		background-color: #4D728C;
+		margin: 0.4em 0;
+		transition: 0.4s;
+	}
+	#bar1.change {
+		-webkit-transform: rotate(-45deg) translate(-0.56em, 0.375em);
+		transform: rotate(-45deg) translate(-0.56em, 0.375em);
+	}
+	#bar2.change {opacity: 0;}
+	#bar3.change {
+		-webkit-transform: rotate(45deg) translate(-0.5em, -0.5em);
+		transform: rotate(45deg) translate(-0.5em, -0.5em);
+	}
+	#menu_icon {
+		display: none;
+		float: right;
+		margin-right: 5%;
+		margin-top: 0.3em;
+		cursor: pointer;
+	}
+	.header_buttons {
+		top: 3.9em;
+		z-index: 100;
+		text-align: center;
+	}
+	.header_buttons li {
+		display: inline-block;
+		margin: 0.3em;
+		word-break: break-all;
+	}
+	.header_buttons a {
+		color: #000;
+		-moz-border-radius: 0.2em;
+		-webkit-border-radius: 0.2em;
+		border-radius: 0.2em;
+		font-size: 1.2em;
+		text-decoration: none;
+		display: inline-block;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding: 0.3em !important;
+		text-align: center;
+	}
+	.header_buttons a:hover{
+		background-color: #0080ff;
+		color: #FFF;
+		text-decoration: none;
+		cursor: pointer;
+	}
+/*end header*/
+
+/*----------->>> PAGE STRUCTURE <<<-----------*/
+/*--------------------------------------------*/
+	
+	/*----------->>> ARTIST <<<-----------*/
+	/*------------------------------------*/
+		.about_artist {background-color: #FFF;}
+		.about_artist .artist_title {color: #0080ff;}
+		#artist h2, #artist p{
+			color: #FFF;
+		}
+		#artist_header {
+			border-bottom: 0.1em solid #FFF;
+		}
+		#artist {
+			background-image: url('images/background_bro_04.jpg');
+			background-repeat: no-repeat;
+			background-position: center; 
+			background-size: cover;
+		}
+		.thinner_container {
+			width: 70%;
+			margin: 0 auto;
+		}
+		#social {text-align: center;}
+		.fa {
+			padding: 1em 0.5em;
+			width: 50px;
+			text-align: center;
+			margin: 0.5em;
+			color: white;
+			border-radius: 4em;
+		}
+		.fa:hover {opacity: 0.7;}
+		/* Make icons bigger */
+		.fa:before {font-size: 2em;}
+		.fa-facebook {background: #3B5998;}
+		.fa-twitter {background: #55ACEE;}
+		.fa-youtube {background: #bb0000;}
+		#website {
+			color: #FFF;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin: 0 auto;
+			display: block;
+			width: 8em;
+		}
+	/*end artist*/
+	
+/*end page structure*/
+	
+	
+/*--------->>> RESPONSIVE <<<---------*/
+/*------------------------------------*/
+
+	/*--------->>> LARGER SCREENS <<<---------*/
+	/*----------------------------------------*/
+		@media (min-width: 2300px) { /*For 4k*/
+		
+			/*----------->>> GLOBAL <<<-----------*/
+			/*------------------------------------*/
+			body {font-size: x-large;}
+			.left_top_part img {
+				height: 100% !important;
+			}
+			.logo {margin-left: 5%;}
+			input[type=text] {
+				margin-right: 5%;
+			}
+			.header_buttons {
+				top: 4.3em;
+				margin-right: 8%;
+			}
+			/*end global*/
+			
+			/*----------->>> ARTIST <<<-----------*/
+			/*------------------------------------*/
+				.fa {padding: 1em; !important}
+			/*end artist*/
+		}
+		/*Show nav*/
+		@media (min-width: 1001px){.header_buttons ul{width: 100% !important;}}
+		@media (max-width: 1000px){ /* Hide nav and activate menu */
+			/*----------->>> GLOBAL <<<-----------*/
+			/*------------------------------------*/
+			.push_left {right: 40%;}
+			.push_open.header_buttons ul {right: 0;}
+			.push_right.header_buttons ul{right: -40%;}
+			.header_buttons {width: 100%;}
+			.header_buttons ul { 
+				position: fixed;
+				background-color: #8C8C8C;
+				right: -3px;
+				border-left: 3px solid #000; 
+				top: 0;
+				height: 150%;
+				z-index: 1;
+				width: 0;
+			}
+			.header_buttons li {
+				text-align: center;
+				width: 80%;
+				padding: 0.625em 0;
+				border-bottom: 0.15em solid #80ccff;  
+				margin: 0 auto;
+			}
+			.header_buttons a {
+				color: #FFF;
+				font-size: 1.3em;
+				padding: 0.5em 0;
+				width: 80%;
+			}
+			#menu_title {
+				display: block;
+				font-size: 1.8em;
+				font-weight: bold;
+				color: #f2f2f2;
+				padding: 1em 0;
+				width: 90%;
+				margin: 0 4%;
+			}
+			#menu_icon {display:inline-block;}
+			/*end global*/
+			
+			/*----------->>> ARTIST <<<-----------*/
+			/*------------------------------------*/
+				.about_artist .wrap {max-width: 90%;}
+			/*end artist*/
+		}
+	/*end larger screens*/
+	
+
+	/*--------->>> TABLET -> BIG PHONES <<<---------*/
+	/*----------------------------------------------*/
+	@media (max-width: 779px){  
+		/*----------->>> GLOBAL <<<-----------*/
+		/*------------------------------------*/
+			.about_artist .wrap {max-width: 90%;}
+			.right_bot_part p {width: 80%;}
+			.left_top_part img {width: 100%;}
+			input[type=text]:focus {
+				width: 60%;
+			}
+		/*end global*/
+		
+		/*----------->>> ARTIST <<<-----------*/
+		/*------------------------------------*/
+			.wrap {text-align: center;}
+			.right_bot_part {
+				height: auto;
+				padding-left: 20px;
+			}
+			.left_top_part {
+				width: 30%;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		/*end artist*/
+	}
+	/*end tablet -> big phones*/
+	
+	/*--------->>> SMALL -> BIG PHONES <<<---------*/
+	/*---------------------------------------------*/
+		@media (max-width: 600px){ 
+			/*----------->>> GLOBAL <<<-----------*/
+			/*------------------------------------*/
+				.artist_title {margin-bottom: 0.5em;}
+				.right_bot_part p, .artist_title {text-align: center !important;}
+				.about_artist .wrap {padding: 1em;}
+				.about_artist p {padding: 0.4em;}
+				input[type=text]:focus {
+					width: 45%;
+				}
+				.navbar {padding-right: 0;}
+				.navbar ul {float: none;}
+				.navbar li {display: inline-block;}
+				.left_top_part {padding-left: 0;}
+				.right_bot_part p {
+					width: 95%;
+					padding: 0.4em;
+				}
+			/*end global*/
+			
+			/*------->>> ARTIST <<<------*/
+			/*------------------------------------*/
+				.thinner_container {
+					width: 90%;
+					margin: 0 auto;
+				}
+				.right_bot_part {padding-left: 0px;}
+				.right_bot_part {
+					display: block;
+					width: 100%;
+				}
+				.left_top_part {
+					display: block;
+					margin: 0 auto;
+					margin-top: 1em;
+				}
+				.left_top_part {width: 60%;}
+				.left_top_part img{
+					display: block;
+					margin: 0 auto;
+				}
+			/*end artist*/			
+		}
+	/*end small -> big phones*/
+	
+	/*--------->>> CUSTOM MENU SCROLL <<<----------*/
+	/*---------------------------------------------*/
+	/*For when mobile device is landscape, makes menu scrollable*/
+		@media (max-height: 450px){ 
+			.header_buttons ul {
+				height:100px;
+				padding-bottom: 500px;
+				overflow: scroll;
+			}
+			.header_buttons ul {height: 400px !important;}
+		}
+		@media (max-height: 340px){ 
+			.header_buttons ul {height: 100px !important;}
+		}
+	/*end custom menu scroll*/
+	
+/*end responsive*/
