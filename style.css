@@ -5,13 +5,17 @@
 	2.	GLOBAL 
 	3.	HEADER/NAVIGATION
 	4.	PAGE STRUCTURE
-		1.	ARTIST
+		1.	ARTIST	
+		2. 	MEMBERSHIP
+		3.	ABOUT US
+		4.	BENEFACTORS
 	5.	RESPONSIVE (using @media queries)
 		1.	LARGER SCREENS (queries: >2300px, >1050px (Show navigation))
 		2.	SHOW NAV MENU (query: <1050px)
 		3.	TABLET -> BIG PHONES (query: <780px)
 		4.	SMALL -> BIG PHONES (query: <600px)
 		5.	CUSTOM MENU SCROLL (query: height <450px, height <340px)
+	6.	FOOTER
 --------------------------------------*/
 
 /*----------->>> RESET <<<-----------*/
@@ -22,6 +26,10 @@
 
 /*----------->>> GLOBAL <<<-----------*/
 /*------------------------------------*/
+	#page_wrapper{
+		width: 80%;
+		float: center;
+	}
 	body {
 		-webkit-transition: all 0.3s ease-in-out;
 		-moz-transition: all 0.3s ease-in-out;
@@ -126,6 +134,12 @@
 		margin: 0 auto;
 		height: auto;
 	}
+	.page_wrapper{
+		position: relative;
+		padding-left: 5em;
+		padding-right: 5em;
+		width: 95%;
+	}	
 /*end global*/
 
 
@@ -290,7 +304,165 @@
 			width: 8em;
 		}
 	/*end artist*/
+
+	/*----------->>> MEMBERSHIP <<<-----------*/
+	/*------------------------------------*/
+		.row_block_display_members{
+			display: block;
+			padding-left: 5em;
+			padding-right: 5em;
+			background: white;
+			height: 52em;
+		}
+		.sub_column_l1 #content {display:none;}
+		.sub_column_l2 #content1 {display:none;}
+		.sub_column_l3 #content2 {display:none;}
+		.sub_column_l1:hover #content{display:block; background-color:cadetblue; margin-bottom:1em;}
+		.sub_column_l2:hover #content1{display:block; background-color:cadetblue; margin-bottom: 1em;}
+		.sub_column_l3:hover #content2{display:block; background-color:cadetblue; margin-bottom:1em;}
+		.sub_column_r1 #content{display: none;}
+		.sub_column_r2 #content1{display:none;}
+		.sub_column_r3 #content2{display:none;}
+		.sub_column_r1:hover #content{display: block; background-color:cadetblue; margin-bottom:1em;}
+		.sub_column_r2:hover #content1{display:block; background-color:cadetblue; margin-bottom:1em;}
+		.sub_column_r3:hover #content2{display:block; background-color:cadetblue; margin-bottom:1em;}
+		.sub_column_left{
+			width: 49%;
+			float: left;
+			padding-top: 2em;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+		.sub_column_right{
+			width: 49%;
+			float: right;
+			margin-left: 5px;
+			padding-top: 2em;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+		.applicant{
+			padding-top: 1em;
+			font-weight: bold;
+		}
+	/*end membership*/
+
+	/*----------->>> ABOUT US <<<-----------*/
+	/*------------------------------------*/
+		.row_block_display{
+			display: block;
+			padding-left: 5em;
+			padding-right: 5em;
+			background: white;
+			height: 70em;
+		}
+		.left_hand_column{
+			margin-top: 2em;
+			float: left;
+			width: 35%;
+			background: white;
+		}
+		.right_hand_column{
+			float: right;
+			width: 60%;
+			background: white;
+		}
+		.right_hand_column h2{
+			border-bottom: 1px solid #282F62;
+		} 
+		.right_hand_column p{
+			margin-top: 1.5em;
+			margin-left: 1em;
+			margin-right: 1em;
+			text-align: justify;
+		}
+		.sub_column_left{
+			width: 49%;
+			float: left;
+			padding-top: 2em;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+		.sub_column_right{
+			width: 49%;
+			float: right;
+			margin-left: 5px;
+			padding-top: 2em;
+			padding-bottom: 10px;
+			text-align: center;
+		}
+		.sub_column_left h2, .sub_column_right h2{
+			border-bottom: 1px solid #5A6073;
+			text-align: left;
+			padding-left: 15px;
+		} 
+		.first_link a{
+			border-top: none;
+			border-bottom: none;
+			padding-left: 10px;
+		}
+		.first_link{
+			margin-top: 2em;
+			border-top: 1px solid #5A6073;
+			border-bottom: 1px solid #5A6073;
+		}
+		.link a{
+			border-bottom: none;
+			padding-left: 10px;
+		}
+		.link{
+			border-bottom: 1px solid #5A6073;
+		}
+		.first_link a:hover{
+			display: block;
+			background-color: #0080ff;
+			color: #FFF;
+			text-decoration: none;
+		}
+		.link a:hover{
+			display: block;
+			background-color: #0080ff;
+			color: #FFF;
+			text-decoration: none;
+		}
+	/*end About Us*/
+	/*----------->>> BENEFACTORS <<<-----------*/
+	/*------------------------------------*/
 	
+		.row_block_display_benefactors{
+			display: block;
+			padding-left: 5em;
+			padding-right: 5em;
+			background: white;
+			height: 45em;
+		}
+		form {
+			padding-top: 1em;
+			padding-left: 5em;
+
+		}
+		form input{
+			background-color: cadetblue;
+		}
+		td{
+			padding-left: 1em;
+		}
+		.column_left{
+			width: 49%;
+			float: left;
+			padding-top: 2em;
+			padding-bottom: 10px;
+			text-align: left;
+		}
+		.column_right{
+			width: 49%;
+			float: right;
+			margin-left: 5px;
+			padding-top: 2em;
+			padding-bottom: 10px;
+			text-align: left;
+		}
+	/*end benefactors*/
 /*end page structure*/
 	
 	
@@ -467,3 +639,16 @@
 	/*end custom menu scroll*/
 	
 /*end responsive*/
+	
+/*--------->>> FOOTER <<<---------*/
+/*------------------------------------*/
+
+footer{
+	color: white;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/*footer*/
+	
