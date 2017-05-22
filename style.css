@@ -261,17 +261,52 @@
 	/*----------->>> ARTIST <<<-----------*/
 	/*------------------------------------*/
 		.about_artist {background-color: #FFF;}
+		.artist_module img {
+			width: 10em;
+			height: 10em;
+			display: block;
+			margin: 0 auto;
+			padding-top: 0.2em;
+		}
+		.artist_module {
+			display: inline-block;
+			background-color: #80ccff;
+			padding: 0.2em;
+			margin: 1%;
+			width: 30%; 
+			-webkit-border-radius: 0.5em; 
+			-moz-border-radius: 0.5em; 
+			border-radius: 0.5em; 
+			-webkit-transition: background-color 0.5s ease-out;
+			-moz-transition: background-color 0.5s ease-out;
+			-o-transition: background-color 0.5s ease-out;
+			transition: background-color 0.5s ease-out;
+		}
+		.artist_img_text {
+			color: #000;
+			font-weight: bold;
+			text-align: center;
+		}
+		.artist_module:hover {
+			background-color: #0080ff;
+			cursor: pointer;
+		}
+		#centre_fix {
+			width: 80%;
+			display: block;
+			margin: 0 auto;
+		}
 		.about_artist .artist_title {color: #0080ff;}
-		#artist h2, #artist p{
+		#artist h2, #artist p {
 			color: #FFF;
 			/* Black outline of words so they're more visible over image */
-			text-shadow: -0.05em 0 #000000,0 0.05em #000000,0.05em 0 #000000,0 -0.05em #000000;
+			text-shadow: -0.07em 0 #000,0 0.07em #000,0.07em 0 #000,0 -0.07em #000;
 		}
 		#artist_header {
 			border-bottom: 0.1em solid #FFF;
 		}
 		#artist {
-			background-image: url('Images/Artist/orchestra_full_shot.jpg');
+			background-image: url('Images/Global/orchestra_full_shot.jpg');
 			background-repeat: no-repeat;
 			background-position: center; 
 			background-size: cover;
@@ -306,7 +341,7 @@
 	/*end artist*/
 
 	/*----------->>> MEMBERSHIP <<<-----------*/
-	/*------------------------------------*/
+	/*----------------------------------------*/
 		.row_block_display_members{
 			display: block;
 			padding-left: 5em;
@@ -348,7 +383,7 @@
 	/*end membership*/
 
 	/*----------->>> ABOUT US <<<-----------*/
-	/*------------------------------------*/
+	/*--------------------------------------*/
 		.row_block_display{
 			display: block;
 			padding-left: 5em;
@@ -426,6 +461,7 @@
 			text-decoration: none;
 		}
 	/*end About Us*/
+	
 	/*----------->>> BENEFACTORS <<<-----------*/
 	/*------------------------------------*/
 	
@@ -463,6 +499,7 @@
 			text-align: left;
 		}
 	/*end benefactors*/
+	
 /*end page structure*/
 	
 	
@@ -475,18 +512,18 @@
 		
 			/*----------->>> GLOBAL <<<-----------*/
 			/*------------------------------------*/
-			body {font-size: x-large;}
-			.left_top_part img {
-				height: 100% !important;
-			}
-			.logo {margin-left: 5%;}
-			input[type=text] {
-				margin-right: 5%;
-			}
-			.header_buttons {
-				top: 4.3em;
-				margin-right: 8%;
-			}
+				body {font-size: x-large;}
+				.left_top_part img {
+					height: 100% !important;
+				}
+				.logo {margin-left: 5%;}
+				input[type=text] {
+					margin-right: 5%;
+				}
+				.header_buttons {
+					top: 4.3em;
+					margin-right: 8%;
+				}
 			/*end global*/
 			
 			/*----------->>> ARTIST <<<-----------*/
@@ -499,43 +536,43 @@
 		@media (max-width: 1000px){ /* Hide nav and activate menu */
 			/*----------->>> GLOBAL <<<-----------*/
 			/*------------------------------------*/
-			.push_left {right: 40%;}
-			.push_open.header_buttons ul {right: 0;}
-			.push_right.header_buttons ul{right: -40%;}
-			.header_buttons {width: 100%;}
-			.header_buttons ul { 
-				position: fixed;
-				background-color: #8C8C8C;
-				right: -3px;
-				border-left: 3px solid #000; 
-				top: 0;
-				height: 150%;
-				z-index: 1;
-				width: 0;
-			}
-			.header_buttons li {
-				text-align: center;
-				width: 80%;
-				padding: 0.625em 0;
-				border-bottom: 0.15em solid #80ccff;  
-				margin: 0 auto;
-			}
-			.header_buttons a {
-				color: #FFF;
-				font-size: 1.3em;
-				padding: 0.5em 0;
-				width: 80%;
-			}
-			#menu_title {
-				display: block;
-				font-size: 1.8em;
-				font-weight: bold;
-				color: #f2f2f2;
-				padding: 1em 0;
-				width: 90%;
-				margin: 0 4%;
-			}
-			#menu_icon {display:inline-block;}
+				.push_left {right: 40%;}
+				.push_open.header_buttons ul {right: 0;}
+				.push_right.header_buttons ul{right: -40%;}
+				.header_buttons {width: 100%;}
+				.header_buttons ul { 
+					position: fixed;
+					background-color: #8C8C8C;
+					right: -3px;
+					border-left: 3px solid #000; 
+					top: 0;
+					height: 150%;
+					z-index: 1;
+					width: 0;
+				}
+				.header_buttons li {
+					text-align: center;
+					width: 80%;
+					padding: 0.625em 0;
+					border-bottom: 0.15em solid #80ccff;  
+					margin: 0 auto;
+				}
+				.header_buttons a {
+					color: #FFF;
+					font-size: 1.3em;
+					padding: 0.5em 0;
+					width: 80%;
+				}
+				#menu_title {
+					display: block;
+					font-size: 1.8em;
+					font-weight: bold;
+					color: #f2f2f2;
+					padding: 1em 0;
+					width: 90%;
+					margin: 0 4%;
+				}
+				#menu_icon {display:inline-block;}
 			/*end global*/
 			
 			/*----------->>> ARTIST <<<-----------*/
@@ -643,12 +680,12 @@
 /*--------->>> FOOTER <<<---------*/
 /*------------------------------------*/
 
-footer{
-	color: white;
-	text-align: center;
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
+	footer{
+		color: white;
+		text-align: center;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
 
 /*footer*/
 	
