@@ -607,6 +607,7 @@
 				display: table-cell;
 				vertical-align: middle;
 			}
+			.artist_module {width: 46%;}
 		/*end artist*/
 	}
 	/*end tablet -> big phones*/
@@ -654,6 +655,7 @@
 					display: block;
 					margin: 0 auto;
 				}
+				.artist_module {width: 96%;}
 			/*end artist*/			
 		}
 	/*end small -> big phones*/
