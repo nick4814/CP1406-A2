@@ -40,7 +40,7 @@
 		background: #f1f1f1;
 		background-image: url("Images/Global/coverPage2.jpg");
 		background-repeat: no-repeat;
-		background-size: 100%;
+		background-size: cover;
 		background-color: #000;
 	}
 	body {
@@ -270,7 +270,6 @@
 
 	/*main section that holds the other sections*/
 	.main{
-		height: 100em;
 		margin-top: 5em;
 		/*background-color: #ffffff;*/
 	}
