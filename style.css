@@ -38,9 +38,10 @@
 	}
 	html {
 		background: #f1f1f1;
-		background-image: url('Images/Global/great-barrier-reef-1-1399765.jpg');
+		background-image: url('Images/Global/coverpage2.jpg');
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: 100%;
+		background-color: #000;
 	}
 	body {
 		font: 17px/26px Calibri, 'Trebuchet MS', 'Open Sans', Helvetica, Arial, 'Lucida Grande', sans-serif;
@@ -247,17 +248,42 @@
 		padding: 0.3em !important;
 		text-align: center;
 	}
-	.header_buttons a:hover{
-		background-color: #0080ff;
-		color: #FFF;
+	.header_buttons a:focus{
+		color: red;
 		text-decoration: none;
 		cursor: pointer;
 	}
+	.header_buttons a:hover{
+		/*background-color: #0080ff;*/
+		color: #fff;
+		text-decoration: none;
+		cursor: pointer;
+	}
+
 /*end header*/
 
 /*----------->>> PAGE STRUCTURE <<<-----------*/
 /*--------------------------------------------*/
-	
+
+	/*----------->>> Index/Home page <<<---------*/
+	/*-------------------------------------------*/
+
+	/*main section that holds the other sections*/
+	.main{
+		height: 100em;
+		margin-top: 5em;
+		/*background-color: #ffffff;*/
+	}
+	/*orchestra banner image*/
+	#banner{
+		background-image: url("Images/Global/orchestra_full_shot.jpg");
+		background-size:100%;
+		background-attachment:fixed;
+		background-repeat: no-repeat;
+		background-position:center;
+		height: 150px;
+	}
+	/*end home/index page*/
 	/*----------->>> ARTIST <<<-----------*/
 	/*------------------------------------*/
 		.about_artist {background-color: #FFF;}
