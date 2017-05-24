@@ -282,6 +282,58 @@
 		background-position:center;
 		height: 150px;
 	}
+	/*annoucements section*/
+	#annoucementsSection{
+		height:20%;
+	}
+		.annoucements{
+		clear: both;
+		display: inline-block;
+		width: 100%;
+		background-color: rgba(44,196,235,0.30);
+		padding-bottom: 35px;
+		padding-top: 0px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		font-weight: bold;
+		text-shadow: 1px 1px rgba(0,0,0,1.00);
+	}
+	.annoucementsContainer {
+		width: 33%;
+		text-align: center;
+		float: left;
+		margin-top: 35px;
+	}
+	.annoucements .annoucementsContainer h3 {
+	color: orange;
+	margin-bottom: 5px;
+	font-size: 30px;
+	}
+	.annoucements .annoucementsContainer h4 {
+		margin-top: 5px;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		margin-left: 5px;
+		color: #fff;
+	}
+	.annoucements .annoucementsContainer p {
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		color: #fff;
+	}
+	/*<end annoucments section>*/
+	#fillerSmall{
+		padding-top: 195px;
+		color: #000;
+		height: 80px;
+		text-align: center;
+		font-size: 2em;
+	}
+	#filler{
+		height: 800px;
+	}
 	/*end home/index page*/
 	/*----------->>> ARTIST <<<-----------*/
 	/*------------------------------------*/
@@ -524,6 +576,21 @@
 		}
 	/*end benefactors*/
 	
+/*--------->>> FOOTER <<<---------*/
+/*------------------------------------*/
+
+	#footer{
+		color: #fff;
+		text-align: left;
+		background-color: rgba(0,0,0,0.60);
+		padding: 50px;
+	}
+	.copywrite{
+		text-align: center;
+	}
+
+/*end footer*/
+	
 /*end page structure*/
 	
 	
@@ -552,7 +619,7 @@
 			
 			/*----------->>> ARTIST <<<-----------*/
 			/*------------------------------------*/
-				.fa {padding: 1em; !important}
+				.fa {padding: 1em; !important};
 			/*end artist*/
 		}
 		/*Show nav*/
@@ -702,16 +769,5 @@
 	/*end custom menu scroll*/
 	
 /*end responsive*/
-	
-/*--------->>> FOOTER <<<---------*/
-/*------------------------------------*/
 
-	footer{
-		color: white;
-		text-align: center;
-		padding-top: 2em;
-		padding-bottom: 2em;
-	}
-
-/*footer*/
 	
