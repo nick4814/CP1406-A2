@@ -286,6 +286,7 @@
 	.slide_show {
 		background-color: #80ccff;
 		margin: 1em auto;	
+		border: 0.1em solid #FFF;
 		-webkit-border-radius: 0.5em; 
 		-moz-border-radius: 0.5em; 
 		border-radius: 0.5em; 
@@ -420,7 +421,8 @@
 			background-color: #80ccff;
 			padding: 0.2em;
 			margin: 1%;
-			width: 30%; 
+			width: 30%;  
+			border: 0.1em solid #FFF;
 			-webkit-border-radius: 0.5em; 
 			-moz-border-radius: 0.5em; 
 			border-radius: 0.5em; 
