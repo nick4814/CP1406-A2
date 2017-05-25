@@ -1,0 +1,468 @@
+@charset "utf-8";
+/*main formatting and background image*/
+body{
+	font-family: source-sans-pro;
+	background-color: #ffffff;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: 200;
+	background-image: url("images/beachSand.gif");
+	background-size: 50% 50%;
+}
+/*main section that holds the other sections*/
+.container{
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+}
+/*logo and navigation bar*/
+.header{
+	width: 100%;
+	height: 7pc;
+	background-color: #fff;
+	margin-right: 25px;
+	margin-top: 25px;
+}
+/*method to link image to home page: source - http://ran.ge/2009/11/11/css-trick-turning-a-background-image-into-a-clickable-link/ accessed 6-4-2017 AUTHORED BY Aaron D. Campbell
+NOVEMBER 11, 2009 CSS, DEVELOPMENT, TUTORIALS & SNIPPITS CSS, DESIGN */
+#homeLogo{
+    background-image: url("images/Sbv_GREEN.gif");
+	background-repeat: no-repeat;
+	background-position: 25px;
+	background-size: 10pc;
+    display:block;
+    text-indent:-9999px;
+	height: 7pc;
+}
+nav{
+	width: 75%;
+	margin-right: 25px;
+	float: right;
+	padding-top: 5pc;
+}
+nav li{
+	float: right;
+	color: #FFFFFF;
+	font-size: 14px;
+	margin-right: 25px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	transition: all 0.3s linear;
+}
+nav li a:link {
+	color: #717171;
+	text-decoration: none;
+}
+nav li a:visited {
+	color: #717171;
+	text-decoration: none;
+}
+nav li a:focus {
+	color: red;
+	text-decoration: none;
+}
+nav li a:hover {
+	color: orange;
+	text-decoration: none;
+}
+nav li a:active{
+	color: yellow;
+	text-decoration: none;
+}
+.header nav li active a{
+	color: orange;
+	text-decoration: none;
+}
+/*beach net section*/
+.banner{
+	background-image: url("images/beachNet.gif");
+	background-size:cover;
+	background-attachment:fixed;
+	padding-top: 50px;
+	background-repeat: no-repeat;
+	background-position:center;
+	padding-bottom: 2pc;
+	padding-left: 0px;
+	padding-right: 1px;	
+	height: 450px;
+}
+.bannerStrip {
+	padding-top: 0.5pc;
+	vertical-align: middle;
+	padding-bottom: 0.5pc;
+	margin-top: 12pc;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fff;
+	color: #717171;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 1pc;
+	font-weight: bold;
+}
+	
+.bannerStrip h2{
+	color: #717171;
+	text-align: center;
+	letter-spacing: 4px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 2pc;
+	line-height: 0px;
+}
+/*join now section*/
+.banner .button {
+	margin-top: 5%;
+	margin-right: 35%;
+	margin-bottom: 5%;
+	margin-left: 38%;
+	text-align: center;
+	border: 3px solid orange;
+	color: orange;
+	transition: all 0.3s linear;
+	background-color: #717171;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	width:20%;
+	height:10%;
+}
+.banner .button a{
+	color: orange;
+	text-decoration: none;
+    font-size: 3vw;	
+	text-align:center;
+}
+.banner .button:hover {
+	background-color: orange;
+	color: #717171;
+	border: 3px solid #717171;
+	font-size: 3vw;	
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align:center;
+}
+.banner .button:hover a {
+	color: #717171;
+	font-size: 3vw;	
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align:center;
+}
+/*annoucements section*/
+.annoucementsSection{
+	height:20%;
+}
+
+.annoucements{
+	clear: both;
+	display: inline-block;
+	width: 100%;
+	background-color: #FFFFFF;
+	padding-bottom: 35px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.annoucementsContainer {
+	width: 33%;
+	text-align: center;
+	float: left;
+	margin-top: 35px;
+}
+.annoucements .annoucementsContainer h3 {
+	color: orange;
+	margin-bottom: 5px;
+}
+.annoucements .annoucementsContainer h4 {
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	color: #717171;
+}
+.annoucements .annoucementsContainer p {
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	color: #717171;
+}
+		#advert_banners{
+			margin-top: 1%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			position: relative;
+    		width: 100%;
+			background-color: #000;
+		}
+		#advert_banners img{
+    		width: 85%;
+    		height: auto;
+			object-fit: contain;
+		}
+		.advertbutton1 a{
+			text-align: center;
+			border: 3px solid #4c93cf;
+			color: #4c93cf;
+			transition: all 0.3s linear;
+			background-color: #000;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+			padding-left: 1%;
+			padding-right: 1%;
+			position: absolute;
+			top: 83%; left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.advertbutton1 a:hover{
+			border: 3px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			background-color: #4c93cf;
+		}
+/*black and white tournament section bottom of page*/
+.bannerJoinBW{
+	background-image: url("images/returnServe.gif");
+	margin-top: 0px;
+	padding-top: 50px;
+	background-size:cover;
+	background-position: center;
+	padding-bottom: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 300px;
+}
+/*Tournament banner strip*/
+.bannerJoinBW .bannerStrip2 {
+	vertical-align: top;
+	margin-top: 1pc;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold;
+	background-color: #494948;
+}
+.bannerJoinBW .bannerStrip2 h2{
+	vertical-align: top;
+	margin-top: 0pc;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-weight: bold;
+	background-color: #494948;
+}
+/*tournament registration button section*/
+.bannerJoinBW .button{
+	margin-top: 2%;
+	margin-right: 35%;
+	margin-bottom: 5%;
+	margin-left: 33%;
+	text-align: center;
+	border: 3px solid #717171;
+	color: #717171;
+	transition: all 0.3s linear;
+	background-color: orange;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	width:30%;
+	height:15%;
+}
+.bannerJoinBW .button a{
+	color: #717171;
+	text-decoration: none;
+    font-size: 3vw;	
+	text-align:center;
+}
+.bannerJoinBW .button:hover {
+	background-color: #fff;
+	color: orange;
+	border: 3px solid orange;
+	font-size: 3vw;	
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align:center;
+}
+.bannerJoinBW .button:hover a {
+	color: orange;
+	font-size: 3vw;	
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align:center;
+}
+/*footer section at bottom of page*/
+footer{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	color: #FFFFFF;
+	background-color: #494948;
+	margin-bottom: 25px;
+	text-align: center;	
+}
+
+/*used on tournaments page*/
+/*beach net section*/
+.banner2{
+	background-image: url("images/beachVolleyBallGame.gif");
+	background-size:cover;
+	background-attachment:fixed;
+	padding-top: 50px;
+	background-repeat: no-repeat;
+	background-position:center;
+	padding-bottom: 2pc;
+	padding-left: 0px;
+	padding-right: 1px;	
+	height: 450px;
+}
+.bannerStrip3 {
+	padding-top: 0.5pc;
+	vertical-align: middle;
+	padding-bottom: 0.5pc;
+	margin-top: 12pc;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #fff;
+	color: #717171;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 1pc;
+	font-weight: bold;
+}
+	
+.bannerStrip3 h2{
+	color: #717171;
+	text-align: center;
+	letter-spacing: 4px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 2pc;
+	line-height: 0px;
+}
+.bannerStrip3 h2 a{
+	color: #717171;
+	text-align: center;
+	letter-spacing: 4px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 2pc;
+	line-height: 0px;
+	text-decoration: none;
+}
+
+.filler{
+	margin-top: 145px;
+}
+
+/*join now section*/
+.banner2 .button {
+	margin-top: 5%;
+	margin-right: 35%;
+	margin-bottom: 5%;
+	margin-left: 38%;
+	text-align: center;
+	border: 3px solid orange;
+	color: orange;
+	transition: all 0.3s linear;
+	background-color: #717171;
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	width:20%;
+	height:10%;
+}
+.banner2 .button a{
+	color: orange;
+	text-decoration: none;
+    font-size: 3vw;	
+	text-align:center;
+}
+.banner2 .button:hover {
+	background-color: orange;
+	color: #717171;
+	border: 3px solid #717171;
+	font-size: 3vw;	
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align:center;
+}
+.banner2 .button:hover a {
+	color: #717171;
+	font-size: 3vw;	
+	padding-top: 1.5%;
+	padding-bottom: 1.5%;
+	padding-left: 1%;
+	padding-right: 1%;
+	text-align:center;
+}
+.article{
+	margin-bottom: 5pc;
+	padding-left: 35%;
+	padding-top: 10px;
+	background-image: url("images/beachVolleyBallLadies.gif");
+	background-repeat: no-repeat;
+	background-position: 30px 25px;
+	background-size: 30%;	
+	color:#717171;
+}
+.article2{
+	margin-bottom: 10pc;
+	padding-left: 35%;
+	padding-top: 10px;
+	background-image: url("images/logo/Sbv_Greyfield.gif");
+	background-repeat: no-repeat;
+	background-position: 30px 25px;
+	background-size: 28%;	
+	color:#717171;
+	line-height: 0.5pc;
+}
+.article3{
+	margin-bottom: 8pc;
+	padding-left: 35%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-image: url("images/beachSandVerticalWedge.gif");
+	background-repeat: no-repeat;
+	background-position: 30px 25px;
+	background-size: 28%;	
+	color:#717171;
+	line-height: 0.5pc;
+}
+.article4{
+	margin-bottom: 0px;
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 150px;
+	color:#717171;
+}
