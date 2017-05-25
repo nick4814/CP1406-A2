@@ -287,6 +287,20 @@
 	}
 	#buttons {text-align: center;}
 	#buttons button {margin: 1em 0.5em;}
+	/*responsive container*/
+	.container {
+		margin: 0.625em;
+		width: 30%;
+		height: 100%;
+		display: inline-block;  
+		vertical-align:top;
+		cursor: pointer;
+	}
+	#content {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
 	/*orchestra banner image*/
 	#banner {
 		background-image: url("Images/Global/orchestra_full_shot.jpg");
@@ -732,6 +746,8 @@
 				#wide_img {width: 25em !important;}
 				#thin_img {width: 15em !important;}
 				.slide_show {width: 30em;}
+				#content {width: 90%;}
+				.container {width: 45%;}
 			/*end home*/
 			
 			/*----------->>> ARTIST <<<-----------*/
@@ -816,6 +832,8 @@
 				#thin_img {width: 5em !important;}
 				.slide_show {width: 20em;}
 				.annoucementsContainer {width: 100%;}
+				#content {width: 98%;}
+				.container {width: 90%;}
 			/*end home*/
 			
 			/*------->>> ARTIST <<<------*/
