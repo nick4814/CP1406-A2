@@ -372,7 +372,7 @@
 	/*------------------------------------*/
 	/*---------source float middle: http://jsfiddle.net/0tc6ycvo/1/---------*/
 		#event_banners{
-			margin-top: 5%;
+			margin-top: 1%;
 			margin-left: auto;
 			margin-right: auto;
 			text-align: center;
@@ -380,6 +380,32 @@
     		width: 85%;
 		}
 		#event_banners img{
+    		width: 85%;
+    		height: auto;
+			object-fit: contain;
+		}
+		#event_banners1a{
+			margin-top: 1%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			position: relative;
+    		width: 85%;
+		}
+		#event_banners1a img{
+    		width: 85%;
+    		height: auto;
+			object-fit: contain;
+		}
+		#event_banners1b{
+			margin-top: 1%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			position: relative;
+    		width: 85%;
+		}
+		#event_banners1b img{
     		width: 85%;
     		height: auto;
 			object-fit: contain;
@@ -404,6 +430,46 @@
 			transition: all 0.3s linear;
 			background-color: #009f4e;
 		}
+		.eventbutton1a a{
+			text-align: center;
+			border: 3px solid #fee900;
+			color: #fee900;
+			transition: all 0.3s linear;
+			background-color: #000;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+			padding-left: 1%;
+			padding-right: 1%;
+			position: absolute;
+			top: 87%; left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.eventbutton1a a:hover{
+			border: 3px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			background-color: #fee900;
+		}
+		.eventbutton1b a{
+			text-align: center;
+			border: 3px solid #baa34e;
+			color: #baa34e;
+			transition: all 0.3s linear;
+			background-color: #000;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+			padding-left: 1%;
+			padding-right: 1%;
+			position: absolute;
+			top: 80%; left: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.eventbutton1b a:hover{
+			border: 3px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			background-color: #baa34e;
+		}
 		.eventbutton2 a{
 			text-align: center;
 			border: 3px solid #009f4e;
@@ -422,8 +488,44 @@
 			transition: all 0.3s linear;
 			background-color: #009f4e;
 		}
+		.eventbutton2a a{
+			text-align: center;
+			border: 3px solid #fee900;
+			color: #fee900;
+			transition: all 0.3s linear;
+			background-color: #000;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+			padding-left: 1%;
+			padding-right: 1%;
+			position: relative;
+		}
+		.eventbutton2a a:hover{
+			border: 3px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			background-color: #fee900;
+		}
+		.eventbutton2b a{
+			text-align: center;
+			border: 3px solid #baa34e;
+			color: #baa34e;
+			transition: all 0.3s linear;
+			background-color: #000;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+			padding-left: 1%;
+			padding-right: 1%;
+			position: relative;
+		}
+		.eventbutton2b a:hover{
+			border: 3px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			background-color: #baa34e;
+		}
 		#event_page{
-			margin-top: 6%;
+			margin-top: 2%;
 			margin-left: auto;
 			margin-right: auto;
 			position: relative;
