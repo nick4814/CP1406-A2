@@ -127,7 +127,7 @@
 		font-size: 1.2em;
 		width: 90%;
 	}	
-	.about_artist .wrap {
+	.about_artist .wrap, #page_content .wrap {
 		position: relative;
 		display: table;
 		padding: 2em;
@@ -288,18 +288,15 @@
 	#buttons {text-align: center;}
 	#buttons button {margin: 1em 0.5em;}
 	/*responsive container*/
-	.container {
-		margin: 0.625em;
-		width: 30%;
-		height: 100%;
-		display: inline-block;  
-		vertical-align:top;
-		cursor: pointer;
-	}
+	#fb_feed {width: 80%}
 	#page_content {
+		width: 80%;
 		margin: 0 auto;
 		text-align: center;
 	}
+	#page_content .artist_module {width: 100%;}
+	#page_content .left_top_part {width: 40%;}
+	.right_bot_part iframe {float: right;}
 	/*orchestra banner image*/
 	#banner {
 		background-image: url("Images/Global/orchestra_full_shot.jpg");
@@ -746,12 +743,11 @@
 				#thin_img {width: 15em !important;}
 				.slide_show {width: 30em;}
 				#page_content {width: 90%;}
-				.container {width: 45%;}
 			/*end home*/
 			
 			/*----------->>> ARTIST <<<-----------*/
 			/*------------------------------------*/
-				.about_artist .wrap {max-width: 90%;}
+				.about_artist .wrap, #page_content .wrap {max-width: 90%;}
 			/*end artist*/
 		}
 	/*end larger screens*/
@@ -832,7 +828,12 @@
 				.slide_show {width: 20em;}
 				.annoucementsContainer {width: 100%;}
 				#page_content {width: 98%;}
-				.container {width: 90%;}
+				#page_content .left_top_part {width: 60%;}
+				.right_bot_part iframe {
+					float: none;
+					display: block;
+					margin: 0 auto;
+				}
 			/*end home*/
 			
 			/*------->>> ARTIST <<<------*/
