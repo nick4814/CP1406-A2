@@ -296,8 +296,7 @@
 		vertical-align:top;
 		cursor: pointer;
 	}
-	#content {
-		width: 80%;
+	#page_content {
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -746,7 +745,7 @@
 				#wide_img {width: 25em !important;}
 				#thin_img {width: 15em !important;}
 				.slide_show {width: 30em;}
-				#content {width: 90%;}
+				#page_content {width: 90%;}
 				.container {width: 45%;}
 			/*end home*/
 			
@@ -832,7 +831,7 @@
 				#thin_img {width: 5em !important;}
 				.slide_show {width: 20em;}
 				.annoucementsContainer {width: 100%;}
-				#content {width: 98%;}
+				#page_content {width: 98%;}
 				.container {width: 90%;}
 			/*end home*/
 			
