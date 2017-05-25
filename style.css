@@ -420,11 +420,11 @@
 			background: white;
 			height: 100em;
 		}
-.row_block_display_artist{
-	display: block;
-	padding-left: 10em;
-	padding - right 10:
-}
+		.row_block_display_artist{
+			display: block;
+			padding-left: 10em;
+			padding-right: 10em:
+		}
 		.sub_column_l1 #content {display:none;}
 		.sub_column_l2 #content1 {display:none;}
 		.sub_column_l3 #content2 {display:none;}
@@ -575,6 +575,14 @@
 			padding-right: 5em;
 			background: white;
 			height: 50em;
+		}
+		.ben_form{
+			margin-top:2em;
+			background: lightblue;
+			border-radius: 15px;
+			padding-top: 2em;
+			padding-left:2em;
+			padding-bottom: 2em;
 		}
 		form input{
 			background-color: cadetblue;
