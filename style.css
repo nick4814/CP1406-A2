@@ -254,6 +254,12 @@
 		text-decoration: none;
 		cursor: pointer;
 	}
+	.header_buttons current_page a{
+		/*background-color: #0080ff;*/
+		color: orange;
+		text-decoration: none;
+		cursor: pointer;
+	}
 
 /*end header*/
 
@@ -349,6 +355,18 @@
 		height: 800px;
 	}
 	/*end home*/
+
+	/*----------->>> EVENTS <<<-----------*/
+	/*------------------------------------*/
+		#event_banners{
+			width: 85%;
+			margin-top: 5%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+
+	/*end events*/
 
 	/*----------->>> ARTIST <<<-----------*/
 	/*------------------------------------*/
