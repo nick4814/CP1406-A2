@@ -274,7 +274,26 @@
 		margin-top: 5em;
 		/*background-color: #ffffff;*/
 	}
-	/*slide show (will be updating)*/
+	/*slide show (will be updating... original code backedup below)*/
+	.slides {
+		position: relative;
+		margin: 0 auto;
+		padding-top: 1em;
+		width: 95%;
+		height: auto;
+		object-fit: contain;
+	}
+	.slide_show {
+		background-color: rgba(44,196,235,0.30);
+		margin: 1em auto;	
+		border: 0.1em solid #FFF;
+		-webkit-border-radius: 0.5em; 
+		-moz-border-radius: 0.5em; 
+		border-radius: 0.5em; 
+		width: 55%;
+		text-align: center;
+	}
+/*-----------Nicks Original SS code-------------/
 	.slides {
 		display: block;
 		margin: 0 auto;
@@ -295,11 +314,15 @@
 	}
 	#buttons {text-align: center;}
 	#buttons button {margin: 1em 0.5em;}
+/--------------------------------------------*/
+
+	#buttons {text-align: center;}
+	#buttons button {margin: 1em 0.5em;}
 	/*responsive container*/
 	#fb_feed {width: 80%}
 	#page_content {
 		width: 80%;
-		margin: 0 auto;
+		margin-top: -150px;
 		text-align: center;
 	}
 	#page_content .artist_module {width: 100%;}
@@ -312,17 +335,20 @@
 		background-attachment:fixed;
 		background-repeat: no-repeat;
 		background-position:center;
-		height: 150px;
+		height: 400px;
 	}
 	/*annoucements section*/
 	#annoucementsSection {
-		height:20%;
+		height:0%;
 	}
-		.annoucements{
+	.annoucements{
 		clear: both;
-		display: inline-block;
+		/*display: inline-block;*/
+		position: relative;
+		top: -250px;
+		height: 120px;
 		width: 100%;
-		background-color: rgba(44,196,235,0.30);
+		background-color: rgba(44,196,235,0.80);
 		padding-bottom: 35px;
 		padding-top: 0px;
 		margin-top: 0px;
