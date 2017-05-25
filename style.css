@@ -267,6 +267,24 @@
 		margin-top: 5em;
 		/*background-color: #ffffff;*/
 	}
+	/*slide show (will be updating)*/
+	.slides {
+		display: block;
+		margin: 0 auto;
+		padding-top: 1em;
+		width: 20em;
+		height: 20em;
+	}
+	.slide_show {
+		background-color: #80ccff;
+		margin: 1em auto;	
+		-webkit-border-radius: 0.5em; 
+		-moz-border-radius: 0.5em; 
+		border-radius: 0.5em; 
+		width: 25em;
+	}
+	#buttons {text-align: center;}
+	#buttons button {margin: 1em 0.5em;}
 	/*orchestra banner image*/
 	#banner{
 		background-image: url("Images/Global/orchestra_full_shot.jpg");
