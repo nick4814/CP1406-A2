@@ -608,6 +608,7 @@
 	#footer{
 		color: #fff;
 		text-align: left;
+		font: white;
 		background-color: rgba(0,0,0,0.60);
 		padding: 50px;
 	}
