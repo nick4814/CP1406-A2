@@ -10,6 +10,7 @@
 		3. 	MEMBERSHIP
 		4.	ABOUT US
 		5.	BENEFACTORS
+		6. 	CONTACT US
 	5.	RESPONSIVE (using @media queries)
 		1.	LARGER SCREENS (queries: >2300px, >1050px (Show navigation))
 		2.	SHOW NAV MENU (query: <1050px)
@@ -286,6 +287,7 @@
 	.slide_show {
 		background-color: #80ccff;
 		margin: 1em auto;	
+		border: 0.1em solid #FFF;
 		-webkit-border-radius: 0.5em; 
 		-moz-border-radius: 0.5em; 
 		border-radius: 0.5em; 
@@ -448,7 +450,8 @@
 			background-color: #80ccff;
 			padding: 0.2em;
 			margin: 1%;
-			width: 30%; 
+			width: 30%;  
+			border: 0.1em solid #FFF;
 			-webkit-border-radius: 0.5em; 
 			-moz-border-radius: 0.5em; 
 			border-radius: 0.5em; 
@@ -522,7 +525,7 @@
 			padding-left: 5em;
 			padding-right: 5em;
 			background: white;
-			height: 100em;
+			height: 107em;
 		}
 		.row_block_display_artist{
 			display: block;
@@ -714,7 +717,22 @@
 			text-align: left;
 		}
 	/*end benefactors*/
-	
+
+	/*----------->>> CONTACT US <<<-----------*/
+	/*----------------------------------------*/
+		.row_block_display_contact{
+			display: block;
+			padding-left: 5em;
+			padding-right: 5em;
+			background: white;
+			height: 50em;
+			}
+.contact_details{
+	font:bold;
+	padding-left:10em;
+}
+
+	/*end Contact Us*/
 /*------------>>> FOOTER <<<----------*/
 /*------------------------------------*/
 
