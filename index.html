@@ -49,9 +49,16 @@
 			</header>
 			<header id="banner">
 			</header>
-			<header id="fillerSmall">
-			<strong>ADD SLIDESHOW OF EVENTS HERE</strong>
-			</header>
+			<div class="slide_show">
+				<img class="slides" src="Images/Slide_Show/2015-World-Music-Large.jpg">
+				<img class="slides" src="Images/Slide_Show/LNAPtitle500.jpg">
+				<img class="slides" src="Images/Slide_Show/sor200.jpg">
+				<img class="slides" src="Images/Slide_Show/TSV Masterworks A7.jpg">
+				<div id="buttons">
+					<button class="SS_left_btn" onclick="changeSlide(-1)">&#10094;</button>
+					<button class="SS_right_btn" onclick="changeSlide(1)">&#10095;</button>
+				</div>
+			</div>
 			<!-- Annoucements section -->
 			<header class="annoucementsSection">
 				<div class="annoucements">
@@ -78,5 +85,25 @@
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
 		<script type="text/javascript" src="js/customMobileMenu.js"></script>
+		<script type="text/javascript"> // Slide Show code
+			var slide_index = 1;
+			showSlide(slide_index);
+
+			function changeSlide(n) {
+				showSlide(slide_index += n);
+			}
+
+			function showSlide(n) {
+				var i;
+				var slides = $(".slides");
+				if (n > slides.length) {slide_index = 1}    
+				if (n < 1) {slide_index = slides.length}
+				slides.each(function() {
+					slides.hide();
+				});
+				// .get wasn't working so .eq was used instead
+				slides.eq(slide_index-1).fadeIn();
+			}
+		</script>
 	</body>
 </html>
