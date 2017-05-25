@@ -5,10 +5,11 @@
 	2.	GLOBAL 
 	3.	HEADER/NAVIGATION
 	4.	PAGE STRUCTURE
-		1.	ARTIST	
-		2. 	MEMBERSHIP
-		3.	ABOUT US
-		4.	BENEFACTORS
+		1.	HOME
+		2.	ARTIST	
+		3. 	MEMBERSHIP
+		4.	ABOUT US
+		5.	BENEFACTORS
 	5.	RESPONSIVE (using @media queries)
 		1.	LARGER SCREENS (queries: >2300px, >1050px (Show navigation))
 		2.	SHOW NAV MENU (query: <1050px)
@@ -259,11 +260,10 @@
 /*----------->>> PAGE STRUCTURE <<<-----------*/
 /*--------------------------------------------*/
 
-	/*----------->>> Index/Home page <<<---------*/
-	/*-------------------------------------------*/
-
+	/*------------>>> HOME <<<-------------*/
+	/*-------------------------------------*/
 	/*main section that holds the other sections*/
-	.main{
+	.main {
 		margin-top: 5em;
 		/*background-color: #ffffff;*/
 	}
@@ -272,9 +272,11 @@
 		display: block;
 		margin: 0 auto;
 		padding-top: 1em;
-		width: 20em;
-		height: 20em;
+		width: 25em;
+		height: 25em;
 	}
+	#wide_img {width: 30em !important;}
+	#thin_img {width: 20em !important;}
 	.slide_show {
 		background-color: #80ccff;
 		margin: 1em auto;	
@@ -286,7 +288,7 @@
 	#buttons {text-align: center;}
 	#buttons button {margin: 1em 0.5em;}
 	/*orchestra banner image*/
-	#banner{
+	#banner {
 		background-image: url("Images/Global/orchestra_full_shot.jpg");
 		background-size:100%;
 		background-attachment:fixed;
@@ -295,7 +297,7 @@
 		height: 150px;
 	}
 	/*annoucements section*/
-	#annoucementsSection{
+	#annoucementsSection {
 		height:20%;
 	}
 		.annoucements{
@@ -336,17 +338,18 @@
 		color: #fff;
 	}
 	/*<end annoucments section>*/
-	#fillerSmall{
+	#fillerSmall {
 		padding-top: 195px;
 		color: #000;
 		height: 80px;
 		text-align: center;
 		font-size: 2em;
 	}
-	#filler{
+	#filler {
 		height: 800px;
 	}
-	/*end home/index page*/
+	/*end home*/
+
 	/*----------->>> ARTIST <<<-----------*/
 	/*------------------------------------*/
 		.about_artist {background-color: #FFF;}
@@ -430,7 +433,7 @@
 	/*end artist*/
 
 	/*----------->>> MEMBERSHIP <<<-----------*/
-	/*------------------------------------*/
+	/*----------------------------------------*/
 		.row_block_display_members{
 			display: block;
 			padding-left: 5em;
@@ -508,7 +511,7 @@
 	/*end membership*/
 
 	/*----------->>> ABOUT US <<<-----------*/
-	/*------------------------------------*/
+	/*--------------------------------------*/
 		.row_block_display{
 			display: block;
 			padding-left: 5em;
@@ -584,8 +587,9 @@
 			text-decoration: none;
 		}
 	/*end About Us*/
+
 	/*----------->>> BENEFACTORS <<<-----------*/
-	/*------------------------------------*/
+	/*-----------------------------------------*/
 	
 		.row_block_display_benefactors{
 			display: block;
@@ -628,7 +632,7 @@
 		}
 	/*end benefactors*/
 	
-/*--------->>> FOOTER <<<---------*/
+/*------------>>> FOOTER <<<----------*/
 /*------------------------------------*/
 
 	#footer{
@@ -719,6 +723,17 @@
 				#menu_icon {display:inline-block;}
 			/*end global*/
 			
+			/*--------------->>> HOME <<<----------------*/
+			/*-------------------------------------------*/
+				.slides {
+					width: 20em;
+					height: 20em;
+				}
+				#wide_img {width: 25em !important;}
+				#thin_img {width: 15em !important;}
+				.slide_show {width: 30em;}
+			/*end home*/
+			
 			/*----------->>> ARTIST <<<-----------*/
 			/*------------------------------------*/
 				.about_artist .wrap {max-width: 90%;}
@@ -739,6 +754,17 @@
 				width: 60%;
 			}
 		/*end global*/
+		
+		/*--------------->>> HOME <<<----------------*/
+		/*-------------------------------------------*/
+			.slides {
+				width: 15em;
+				height: 15em;
+			}
+			#wide_img {width: 20em !important;}
+			#thin_img {width: 10em !important;}
+			.slide_show {width: 25em;}
+		/*end home*/
 		
 		/*----------->>> ARTIST <<<-----------*/
 		/*------------------------------------*/
@@ -777,7 +803,19 @@
 					width: 95%;
 					padding: 0.4em;
 				}
-			/*end global*/
+			/*end global*/	
+			
+			/*--------------->>> HOME <<<----------------*/
+			/*-------------------------------------------*/
+				.slides {
+					width: 10em;
+					height: 10em;
+				}
+				#wide_img {width: 15em !important;}
+				#thin_img {width: 5em !important;}
+				.slide_show {width: 20em;}
+				.annoucementsContainer {width: 100%;}
+			/*end home*/
 			
 			/*------->>> ARTIST <<<------*/
 			/*------------------------------------*/
