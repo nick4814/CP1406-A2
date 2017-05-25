@@ -402,6 +402,34 @@
 			transition: all 0.3s linear;
 			background-color: #009f4e;
 		}
+		.eventbutton2 a{
+			text-align: center;
+			border: 3px solid #009f4e;
+			color: #009f4e;
+			transition: all 0.3s linear;
+			background-color: #000;
+			padding-top: 1.5%;
+			padding-bottom: 1.5%;
+			padding-left: 1%;
+			padding-right: 1%;
+			position: relative;
+		}
+		.eventbutton2 a:hover{
+			border: 3px solid #000;
+			color: #000;
+			transition: all 0.3s linear;
+			background-color: #009f4e;
+		}
+		#event_page{
+			margin-top: 5%;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+    		width: 85%;
+			background-color: rgba(255,255,255,0.80);
+			padding: 50px;
+		}
+		.eventwrap{padding: 10px;}
 
 	/*end events*/
 
