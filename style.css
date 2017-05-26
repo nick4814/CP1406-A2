@@ -284,7 +284,7 @@
 		object-fit: contain;
 	}
 	.slide_show {
-		background-color: rgba(44,196,235,0.30);
+		background-color: #80ccff;
 		margin: 1em auto;	
 		border: 0.1em solid #FFF;
 		-webkit-border-radius: 0.5em; 
@@ -304,7 +304,6 @@
 	#wide_img {width: 30em !important;}
 	#thin_img {width: 20em !important;}
 	.slide_show {
-		background-color: #80ccff;
 		margin: 1em auto;	
 		border: 0.1em solid #FFF;
 		-webkit-border-radius: 0.5em; 
