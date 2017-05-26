@@ -369,9 +369,9 @@
 		background-color: rgba(255,255,255,0.50)
 	}
 	.annoucements .annoucementsContainer h3 {
-	color: orange;
-	margin-bottom: 5px;
-	font-size: 30px;
+		color: orange;
+		margin-bottom: 5px;
+		font-size: 30px;
 	}
 	.annoucements .annoucementsContainer h4 {
 		margin-top: 5px;
@@ -409,7 +409,7 @@
 			margin-right: auto;
 			text-align: center;
 			position: relative;
-    		width: 85%;
+    			width: 85%;
 		}
 		#event_banners img{
     		width: 85%;
