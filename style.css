@@ -324,7 +324,7 @@
 		margin: 0 auto;
 		text-align: center;
 	}
-	#page_content .artist_module {width: 80%;}
+	#page_content .artist_module {width: 100%;}
 	#page_content .left_top_part {width: 40%;}
 	.right_bot_part iframe {float: right;}
 	/*orchestra banner image*/
@@ -997,8 +997,6 @@
 				width: 15em;
 				height: 15em;
 			}
-			#wide_img {width: 20em !important;}
-			#thin_img {width: 10em !important;}
 			.slide_show {width: 25em;}
 		/*end home*/
 		
@@ -1047,8 +1045,6 @@
 				.slides {
 					height: 10em;
 				}
-				#wide_img {width: 15em !important;}
-				#thin_img {width: 5em !important;}
 				.slide_show {width: 20em;}
 				.annoucementsContainer {width: 100%;}
 				#page_content {width: 98%;}
