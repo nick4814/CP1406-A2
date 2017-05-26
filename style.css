@@ -324,7 +324,7 @@
 		margin: 0 auto;
 		text-align: center;
 	}
-	#page_content .artist_module {width: 100%;}
+	#page_content .artist_module {width: 80%;}
 	#page_content .left_top_part {width: 40%;}
 	.right_bot_part iframe {float: right;}
 	/*orchestra banner image*/
@@ -435,11 +435,11 @@
 			margin-right: auto;
 			text-align: center;
 			position: relative;
-    		width: 85%;
+    			width: 85%;
 		}
 		#event_banners1b img{
-    		width: 85%;
-    		height: auto;
+			width: 85%;
+			height: auto;
 			object-fit: contain;
 		}
 		.eventbutton1 a{
