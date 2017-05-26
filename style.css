@@ -646,10 +646,12 @@
 		#website {
 			color: #FFF;
 			font-size: 1.5em;
+			/* Black outline of words so they're more visible over image */
+			text-shadow: -0.07em 0 #000,0 0.07em #000,0.07em 0 #000,0 -0.07em #000;
 			font-weight: bold;
 			margin: 0 auto;
 			display: block;
-			width: 8em;
+			width: 9em;
 		}
 	/*end artist*/
 
