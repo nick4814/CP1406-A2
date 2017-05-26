@@ -580,7 +580,8 @@
 			padding-top: 0.2em;
 		}
 		.artist_module {
-			display: inline-block;
+			display: inline-block;  
+    			vertical-align:top;
 			background-color: #80ccff;
 			padding: 0.2em;
 			margin: 1%;
