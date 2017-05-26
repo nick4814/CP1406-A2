@@ -321,7 +321,7 @@
 	#fb_feed {width: 80%}
 	#page_content {
 		width: 80%;
-		margin-top: -150px;
+		margin: 0 auto;
 		text-align: center;
 	}
 	#page_content .artist_module {width: 100%;}
