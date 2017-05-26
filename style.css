@@ -973,6 +973,7 @@
 			/*----------->>> ARTIST <<<-----------*/
 			/*------------------------------------*/
 				.about_artist .wrap, #page_content .wrap {max-width: 90%;}
+				.artist_module {width: 46%;}
 			/*end artist*/
 		}
 	/*end larger screens*/
@@ -1012,7 +1013,6 @@
 				display: table-cell;
 				vertical-align: middle;
 			}
-			.artist_module {width: 46%;}
 		/*end artist*/
 	}
 	/*end tablet -> big phones*/
